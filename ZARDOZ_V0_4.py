@@ -53,7 +53,6 @@
 import rhinoscriptsyntax as rs
 import scriptcontext as sc
 import Rhino
-import serial
 import time
 
 Rhino.Runtime.HostUtils.DisplayOleAlerts(False)
@@ -180,7 +179,7 @@ def sendEverything (polyline, speed):
     #-----------Export to File-START----------------------------------------
     #        f = open("C:\PLT\dumpZardoz.plt","w")
     now = time.strftime("%Y%M%D_%H%M%S")
-    f = open("C:\Users\danbachm\Desktop\PLT\cut_"+str(now)+".plt","w")
+    f = open("C:\Users\YOURUSERNAME\Desktop\PLT\cut_"+str(now)+".plt","w")
     
     header = ""
     footer = ""
